@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Driftnote">
+  <rect width="32" height="32" rx="7.5" fill="#6D5BFF"/>
+  <path d="M5.5 20.5 C 9 14, 12.5 14, 16 16.5 C 19.5 19, 23 19, 26 12.5"
+        fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="26" cy="12.5" r="2.9" fill="#FFB23E"/>
+</svg>
