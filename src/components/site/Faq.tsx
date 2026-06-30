@@ -7,8 +7,8 @@ import {
 
 const FAQS = [
   {
-    q: "Is it actually free?",
-    a: "Yes. The Free plan covers unlimited capture, AI filing, and up to three projects, forever. Pro ($5/mo) is for when you have more projects than that and want custom routing rules and full search.",
+    q: "What does early access cost?",
+    a: "Nothing. Driftnote is in early access while we build it, so joining the waitlist is free. We'll sort out paid plans later — and early users will hear about it first, with no surprises.",
   },
   {
     q: "Where do my notes end up?",

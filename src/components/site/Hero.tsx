@@ -114,7 +114,7 @@ export function Hero() {
         </div>
 
         <p className="mt-6 font-mono text-[13px] text-ink-soft">
-          Free forever for the basics · Pro is $5/mo
+          Early access is free · no card, no spam
         </p>
       </div>
     </section>
