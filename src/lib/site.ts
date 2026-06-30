@@ -19,9 +19,16 @@ export const site = {
   pro: { price: 5, period: "mo" },
 } as const;
 
-// Reddit Pixel advertiser id. Set NEXT_PUBLIC_REDDIT_PIXEL_ID in CI / .env.local
-// to wire conversion tracking. Empty = pixel scripts are skipped (safe locally).
+// Analytics / advertising ids. Every one is optional and gated: when an id is
+// empty, that provider's script is never loaded and its events no-op. Set them
+// in .env.local (local) or as repo Variables (deploy). No code change needed to
+// turn a provider on — just add its id.
 export const REDDIT_PIXEL_ID = process.env.NEXT_PUBLIC_REDDIT_PIXEL_ID ?? "";
+export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "";
+export const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID ?? "";
+export const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY ?? "";
+export const POSTHOG_HOST =
+  process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://us.i.posthog.com";
 
 // Formspree form id for the waitlist. Empty = the form falls back to a local
 // "saved" state so the page still demos end-to-end without a backend.

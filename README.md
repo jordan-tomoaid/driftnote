@@ -35,7 +35,14 @@ local dev; wire them as repo **Variables** for the deploy.
 |---|---|
 | `NEXT_PUBLIC_BASE_PATH` | Path prefix for GitHub Pages project sites (`/driftnote`). Empty locally. |
 | `NEXT_PUBLIC_REDDIT_PIXEL_ID` | Reddit advertiser/pixel id. Empty = pixel not loaded. |
+| `NEXT_PUBLIC_META_PIXEL_ID` | Meta (Facebook/Instagram) Pixel id. Empty = not loaded. |
+| `NEXT_PUBLIC_GA4_ID` | Google Analytics 4 Measurement ID (`G-…`). Empty = not loaded. |
+| `NEXT_PUBLIC_POSTHOG_KEY` / `NEXT_PUBLIC_POSTHOG_HOST` | PostHog project key + host. Empty key = not loaded. |
 | `NEXT_PUBLIC_FORMSPREE_ID` | Formspree form id for waitlist emails. Empty = local success state only. |
+
+Every analytics/ad provider is independent and gated on its id — set the ones
+you want, leave the rest empty. The waitlist conversion fires across all that
+are configured (`src/lib/track.ts`).
 
 ## Deploy (GitHub Pages)
 
